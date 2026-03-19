@@ -1494,7 +1494,7 @@
 
   <!-- FOOTER -->
   <footer>
-    <p>© 2025 <span>Débora Nunes</span> · Todos os direitos reservados</p>
+    <p>© <span id="ano"></span> <span>Débora Nunes</span> · Todos os direitos reservados</p>
   </footer>
 
   <script>
@@ -1516,6 +1516,9 @@
         document.getElementById('investimento').scrollIntoView({ behavior: 'smooth' });
       });
     });
+  </script>
+  <script>
+    document.getElementById('ano').textContent = new Date().getFullYear();
   </script>
 </body>
 
